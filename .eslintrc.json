@@ -1,0 +1,38 @@
+{
+  "extends": [
+    "next",
+    "prettier",
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "mocha": true,
+    "mongo": true
+  },
+  "plugins": ["prettier", "mocha"],
+  "rules": {
+    "@next/next/no-img-element": "off",
+    "comma-dangle": ["error", "only-multiline"],
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "react/display-name": "off",
+    "no-unused-vars": ["warn"],
+    "no-extra-semi": "off",
+    // "no-undef": ["error"],
+    //indent: ['error', 2, { SwitchCase: 1 }],
+    "indent": 0,
+    // "linebreak-style": ["error", "unix"],
+    "linebreak-style": ["error", "windows"],
+    "no-console": 0,
+    "quotes": ["error", "double"],
+    "semi": [0, "never"],
+    "no-constant-condition": "off",
+    "no-useless-escape": "off",
+    "no-empty": "off",
+    "react-hooks/rules-of-hooks": "off",
+    "react-hooks/exhaustive-deps": "off"
+  }
+}
